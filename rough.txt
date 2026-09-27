@@ -1,0 +1,50 @@
+// function collides(obj1, obj2) {
+//     if (obj1.x + obj1.size < obj2.x ||
+//         obj2.x + obj2.size < obj1.x ||
+//         obj1.y > obj2.y + obj2.size ||
+//         obj2.y > obj1.y + obj1.size) {
+//         return false;
+//     } else {
+//         return true;
+//     }
+// }
+
+
+ // if (player.x + player.size >= canvas.width) {
+    //     stop();
+    //     return;
+    // }
+// for (let a of asteroids) {
+//         if (collides(player, a )) {
+//             stop();
+//             return;
+//         }
+//     }
+
+//     for (let a of asteroids) {
+//         if (a.x + a.size < 0 ) {
+//             a.x = canvas.width;
+//         } else {
+//             a.x = a.x + a.xChange;
+//             a.y = a.y + a.yChange;
+//         }
+//     }
+
+
+ // for (let a of asteroids) {
+    //     context.fillRect(a.x, a.y, a.size, a.size);
+    // }
+
+
+    // if (asteroids.length < 10) {
+    //     let a = {
+    //         x : canvas.width,
+    //         y : randint(0, canvas.height),
+    //         size : randint(5, 10),
+    //         xChange : randint(-10, -1),
+    //         yChange : 0
+    //     }
+    //     asteroids.push(a);
+    // }
+
+    add crash out press space to crash out 

@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block main_content %}
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+    <canvas width="1280" height="720"></canvas>
+    <div id="characterSelect">
+        <h1>Select Your Character</h1>
+        <div>
+            <button onclick="prev()">◀ </button>
+            <img id="characterImage" src="" alt="Character" />
+            <button onclick="next()"> ▶</button>
+          </div>
+          <h2 id="charName">Mick</h2>
+          <button onclick="selectCharacter()">Select</button>
+      </div>
+      <p><button><a href="{{url_for('index')}}">Home</a></button></p>
+      {% endblock %}

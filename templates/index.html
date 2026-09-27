@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block main_content %}
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+   <p><a href="{{url_for('play')}}"><button>Play</button></a></p>
+   <p><button><a href="{{url_for('help')}}">Help</a></button></p>
+   <p><button><a href="{{url_for('leaderBoard')}}">Leaderboard</a></button></p>
+   {%if not g.user%}
+   <p><button><a href="{{url_for('login')}}">Sign in</a></button></p>
+   {% else %}
+   <p><button><a href="{{url_for('logout')}}">Logout</a></button></p>
+   {%endif%}
+   {% endblock %}

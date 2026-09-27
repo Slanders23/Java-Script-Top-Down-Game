@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block main_content %}
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+<h1>Binds</h1>
+<div class="key"><h2>W</h2> </div>  <p>move Up</p>
+<div class="key"><h2>A</h2></div>  <p>move left </p>
+<div class="key"><h2>S</h2> </div><p>move down</p>
+<div class="key"><h2>D</h2></div> <p>move right</p>
+<div class="key"><h2>shift</h2></div> <p>sprint</p>
+<div class="key"><h2>e</h2></div> <p>Crash Out</p>
+<div class="key"><h2>Mouse Left</h2></div> <p>attack</p>
+<div class="key"><h2>Mouse Right</h2></div> <p>Deffend</p>
+<div class="key"><h2>Mouse Middle</h2></div> <p>Trow dart</p>
+<div class="key"><h2>C</h2></div> <p>Change Character</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<h1>Cheats</h1>
+<div class="key"><h2>T</h2> </div><p>Hennessy- Makes You Black out when colide with enemy gives health</p>
+<div class="key"><h2>Y</h2> </div><p>Marlboro Reds - You have been training your lungs givinging you extra lung capacity , Infinit stamina</p>
+<div class="key"><h2>U</h2></div> <p>Liqued Luck - Self Explanitory Gives extra points</p>
+<div class="key"><h2>I</h2></div> <p>Coder - Damage Enemys with Your stench</p>
+<div class="key"><h2>O</h2> </div><p>Pink Monster - Contains red40 causing crash outs press e to crash out</p>
+<div class="key"><h2>P</h2> </div><p>NaughtyOnes - Lots of Protien increasing strenght</p>
+<p><button><a href="{{url_for('index')}}">Home</a></button></p>
+{% endblock %}

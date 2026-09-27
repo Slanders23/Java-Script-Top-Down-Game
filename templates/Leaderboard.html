@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block main_content %}
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+<h1>Leaderboard</h1>
+<table>
+    <tr>
+        <th>User Name</th>
+        <th>Score</th>
+    </tr>
+    {% for row in leaderBoard %}
+    <tr>
+        <td>{{ row['user_name'] }}</td>
+        <td>{{ row['Score'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<p><button><a href="{{url_for('index')}}">Home</a></button></p>
+{% endblock %}
